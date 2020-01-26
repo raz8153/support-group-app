@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hackverse/home.dart';
 import 'package:hackverse/usersignup.dart';
 
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Login Page"),
-        ),
+      appBar: AppBar(
+        title: Text("Login Page"),
+      ),
       body: Container(
           padding: EdgeInsets.all(50.0),
           child: Column(
@@ -17,6 +18,7 @@ class Login extends StatelessWidget {
                 'LOGIN',
                 style: TextStyle(fontSize: 20),
               ),
+
 
 
                 TextFormField(
@@ -53,15 +55,8 @@ class Login extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => UserSignUp()),
                   );
                 }),
-
-
-
-
-
             ],
-          )
-      ),
-
+          )),
     );
   }
 }
